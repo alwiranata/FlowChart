@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="luas segitiga"/>
+        <attribute name="authors" value="HP"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-22 10:15:55 PM"/>
+        <attribute name="created" value="SFA7TEFQVE9QLUM0MTMzSU1JOzIwMjUtMDItMjI7MTA6MDY6NTIgUE07MjQyNw=="/>
+        <attribute name="edited" value="SFA7TEFQVE9QLUM0MTMzSU1JOzIwMjUtMDItMjI7MTA6MTU6NTUgUE07MTsyNTM4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="alas, tinggi, luasSegitiga" type="Integer" array="False" size=""/>
+            <input variable="alas"/>
+            <input variable="tinggi"/>
+            <assign variable="luasSegitiga" expression="(alas * tinggi ) /2"/>
+            <output expression="luasSegitiga" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
