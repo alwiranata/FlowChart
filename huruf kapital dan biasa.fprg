@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="hurfu kapital dan biasa"/>
+        <attribute name="authors" value="HP"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-23 04:49:46 PM"/>
+        <attribute name="created" value="SFA7TEFQVE9QLUM0MTMzSU1JOzIwMjUtMDItMjM7MDQ6MDk6MzggUE07MjQzOA=="/>
+        <attribute name="edited" value="SFA7TEFQVE9QLUM0MTMzSU1JOzIwMjUtMDItMjM7MDQ6NDk6NDYgUE07MjsyNTUw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="teks, huruf" type="String" array="False" size=""/>
+            <declare name="kapital" type="Boolean" array="False" size=""/>
+            <output expression="&quot;Masukkan Huruf&quot;" newline="True"/>
+            <input variable="teks"/>
+            <assign variable="huruf" expression="Char(teks, 0)"/>
+            <assign variable="kapital" expression="huruf &gt;= &quot;A&quot; and huruf &lt;= &quot;Z&quot;"/>
+            <if expression="kapital">
+                <then>
+                    <output expression="huruf &amp; &quot; Adalah huruf kapital&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="huruf &amp; &quot; Adalah huruf biasa&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

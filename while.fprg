@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="while"/>
+        <attribute name="authors" value="HP"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-23 04:09:14 PM"/>
+        <attribute name="created" value="SFA7TEFQVE9QLUM0MTMzSU1JOzIwMjUtMDItMjM7MDI6MTc6NTUgUE07MjQzNA=="/>
+        <attribute name="edited" value="SFA7TEFQVE9QLUM0MTMzSU1JOzIwMjUtMDItMjM7MDQ6MDk6MTQgUE07MTsyNTQw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="teks" type="String" array="False" size=""/>
+            <declare name="indeks" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukkan Teks &quot;" newline="True"/>
+            <input variable="teks"/>
+            <assign variable="indeks" expression="0"/>
+            <while expression="indeks &lt; Len(teks)">
+                <output expression="Char(teks, indeks)" newline="True"/>
+                <assign variable="indeks" expression="indeks + 1"/>
+            </while>
+        </body>
+    </function>
+    <function name="percabangan" type="None" variable="">
+        <parameters/>
+        <body/>
+    </function>
+</flowgorithm>

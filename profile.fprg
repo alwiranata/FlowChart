@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="profile"/>
+        <attribute name="authors" value="HP"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-23 02:17:46 PM"/>
+        <attribute name="created" value="SFA7TEFQVE9QLUM0MTMzSU1JOzIwMjUtMDItMjM7MDE6NTk6NTIgUE07MjQzNg=="/>
+        <attribute name="edited" value="SFA7TEFQVE9QLUM0MTMzSU1JOzIwMjUtMDItMjM7MDI6MTc6NDYgUE07MTsyNTQy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nim" type="Integer" array="False" size=""/>
+            <declare name="nama" type="String" array="False" size=""/>
+            <output expression="&quot;Masukkan NIM&quot;" newline="True"/>
+            <input variable="nim"/>
+            <output expression="&quot;Masukkan Nama&quot;" newline="True"/>
+            <input variable="nama"/>
+            <output expression="&quot;NIM  = &quot; &amp; nim &amp; &quot; Nama = &quot; &amp; nama" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
