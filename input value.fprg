@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="input value"/>
+        <attribute name="authors" value="HP"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-27 11:10:05 AM"/>
+        <attribute name="created" value="SFA7TEFQVE9QLUM0MTMzSU1JOzIwMjUtMDItMjc7MTA6MzU6NTEgQU07MjQxOA=="/>
+        <attribute name="edited" value="SFA7TEFQVE9QLUM0MTMzSU1JOzIwMjUtMDItMjc7MTE6MTA6MDUgQU07MTsyNTE5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nilai" type="Integer" array="False" size=""/>
+            <declare name="hasil" type="String" array="False" size=""/>
+            <output expression="&quot;Masukkan Nilai&quot;" newline="True"/>
+            <input variable="nilai"/>
+            <if expression="(nilai &gt;= 90) and (nilai &lt;= 100)">
+                <then>
+                    <assign variable="hasil" expression="&quot;A&quot;"/>
+                    <output expression="hasil" newline="True"/>
+                </then>
+                <else>
+                    <if expression="(nilai &gt;= 80) and (nilai &lt; 90)">
+                        <then>
+                            <assign variable="hasil" expression="&quot;B&quot;"/>
+                            <output expression="hasil" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="(nilai &gt;= 70) and (nilai &lt;80)">
+                                <then>
+                                    <assign variable="hasil" expression="&quot;C&quot;"/>
+                                    <output expression="hasil" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="(nilai &gt;= 60) and (nilai &lt; 70 )">
+                                        <then>
+                                            <assign variable="hasil" expression="&quot;D&quot;"/>
+                                            <output expression="hasil" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="(nilai &gt;= 0) and (nilai  &lt;60)">
+                                                <then>
+                                                    <assign variable="hasil" expression="&quot;E&quot;"/>
+                                                    <output expression="hasil" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;Masukkan angka yang benar 0-100&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
