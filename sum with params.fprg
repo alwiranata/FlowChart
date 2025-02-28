@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="sum with params"/>
+        <attribute name="authors" value="HP"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-28 01:58:51 PM"/>
+        <attribute name="created" value="SFA7TEFQVE9QLUM0MTMzSU1JOzIwMjUtMDItMjg7MDE6Mzk6NTQgUE07MjQ0MQ=="/>
+        <attribute name="edited" value="SFA7TEFQVE9QLUM0MTMzSU1JOzIwMjUtMDItMjg7MDE6NTg6NTEgUE07MTsyNTQ3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b" type="Integer" array="False" size=""/>
+            <output expression="&quot;Nilai A = &quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Nilai  B = &quot;" newline="True"/>
+            <input variable="b"/>
+            <call expression="sum(a ,b)"/>
+        </body>
+    </function>
+    <function name="sum" type="None" variable="">
+        <parameters>
+            <parameter name="a" type="Integer" array="False"/>
+            <parameter name="b" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="value" type="Integer" array="False" size=""/>
+            <assign variable="value" expression="a * b"/>
+            <output expression="value" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
