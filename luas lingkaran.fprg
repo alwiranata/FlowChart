@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="luas lingkaran"/>
+        <attribute name="authors" value="HP"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-03 12:04:29 PM"/>
+        <attribute name="created" value="SFA7TEFQVE9QLUM0MTMzSU1JOzIwMjUtMDMtMDM7MTE6NTE6MjcgQU07MjQxNQ=="/>
+        <attribute name="edited" value="SFA7TEFQVE9QLUM0MTMzSU1JOzIwMjUtMDMtMDM7MTI6MDQ6MjkgUE07MTsyNTM5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="R" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukkan R&quot;" newline="True"/>
+            <input variable="R"/>
+            <call expression="luasLingkaran(R)"/>
+        </body>
+    </function>
+    <function name="luasLingkaran" type="None" variable="">
+        <parameters>
+            <parameter name="R" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="P, luas" type="Real" array="False" size=""/>
+            <assign variable="P" expression="3.14"/>
+            <assign variable="luas" expression="p * R * R"/>
+            <output expression="luas" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
