@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="OFF and ON lamp"/>
+        <attribute name="authors" value="HP"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-04 10:37:48 AM"/>
+        <attribute name="created" value="SFA7TEFQVE9QLUM0MTMzSU1JOzIwMjUtMDMtMDQ7MTA6Mjg6MjMgQU07MjQxNQ=="/>
+        <attribute name="edited" value="SFA7TEFQVE9QLUM0MTMzSU1JOzIwMjUtMDMtMDQ7MTA6Mzc6NDggQU07MTsyNTMw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="value" type="Integer" array="False" size=""/>
+            <output expression="&quot;Input 0 = OFF OR On = 1&quot;" newline="True"/>
+            <input variable="value"/>
+            <call expression="condtionValue(value)"/>
+        </body>
+    </function>
+    <function name="condtionValue" type="None" variable="">
+        <parameters>
+            <parameter name="n" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <if expression="n == 1">
+                <then>
+                    <output expression="&quot;Lampu On &quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Lampu Of&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
