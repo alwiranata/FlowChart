@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Algoritma Login"/>
+        <attribute name="authors" value="HP"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-12 12:11:06 PM"/>
+        <attribute name="created" value="SFA7TEFQVE9QLUM0MTMzSU1JOzIwMjUtMDMtMTI7MTE6Mzc6MzggQU07MjQyMQ=="/>
+        <attribute name="edited" value="SFA7TEFQVE9QLUM0MTMzSU1JOzIwMjUtMDMtMTI7MTI6MTE6MDYgUE07MTsyNTMy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Password, Username" type="String" array="False" size=""/>
+            <output expression="&quot;Input Username &quot;" newline="True"/>
+            <input variable="Username"/>
+            <output expression="&quot;Input Password&quot;" newline="True"/>
+            <input variable="Password"/>
+            <call expression="login(Password , Username)"/>
+        </body>
+    </function>
+    <function name="login" type="None" variable="">
+        <parameters>
+            <parameter name="password" type="String" array="False"/>
+            <parameter name="username" type="String" array="False"/>
+        </parameters>
+        <body>
+            <declare name="dashboardAdmin" type="Boolean" array="False" size=""/>
+            <declare name="passwordLog, usernameLog" type="String" array="False" size=""/>
+            <assign variable="dashboardAdmin" expression="false"/>
+            <assign variable="PasswordLog" expression="password"/>
+            <assign variable="UsernameLog" expression="username"/>
+            <if expression="PasswordLog == &quot;aldo123&quot; AND UsernameLog ==&quot;aldo&quot;">
+                <then>
+                    <assign variable="dashboardAdmin" expression="true"/>
+                    <if expression="dashboardAdmin == true">
+                        <then>
+                            <output expression="&quot;Welocme To Admin Dashboard&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Login Terlebih Dahulu&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Password atau Username anda salah coba lagi!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
